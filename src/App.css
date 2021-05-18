@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+/*---------------------------------------------------------------------------------------*/
+/*Imágenes*/
+.belen-dent{
+  background-image: url('./components/assets/images/Inicio/Header/pexels.jpg');
+  background-position: 30% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.belen-card{
+  background-image: url('./components/assets/images/Inicio/Header/belen-card.jpg');
+  background-position: 30% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.bioseguridad{
+  background-image: url('./components/assets/images/Inicio/Header/bioseguridad.jpg');
+  background-position: 30% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.especialidades{
+  background-image: url('./components/assets/images/Inicio/Header/especialidades.jpg');
+  background-position: 30% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+/*---------------------------------------------------------------------------------------*/
+.alt{
+  background: #1a73cd ;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.alt-port{
+  height: 30rem;
+  background: #7cdced;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bk-color{
+  background-color: #233554;
+}
+.bka-color{
+  background-color: #f5f5f5;
+}
+.color{
+  color: #233554;
 }
 
-.App-link {
-  color: #61dafb;
+.yellow{
+  background-color: #fae053;
+}
+.textColor{
+  color: #fae053;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  font-family: 'Poppins', sans-serif;
 }
+
+
+
+/*---------------------------------------------------------------------------------------*/
+/*colores gradient*/
+.back-color{
+  background: #0090d5;
+  background: -moz-linear-gradient(left, #0090d5 36%, #24c4d2 64%);
+  background: -webkit-linear-gradient(left, #0090d5 36%,#24c4d2 64%);
+  background: linear-gradient(to right, #0090d5 36%,#24c4d2 64%);
+
+}
+.bg-color{
+  background: #7cdced;
+  background: -moz-linear-gradient(left,#7cdced 0,#1a73cd 48%,#1a73cd 100%);
+  background: -webkit-gradient(left top,right top,color-stop(0,#7cdced),color-stop(48%,#1a73cd),color-stop(100%,#1a73cd));
+  background: -webkit-linear-gradient(left,#7cdced 0,#1a73cd 48%,#1a73cd 100%);
+  background: -o-linear-gradient(left,#7cdced 0,#1a73cd 48%,#1a73cd 100%);
+  background: -ms-linear-gradient(left,#7cdced 0,#1a73cd 48%,#1a73cd 100%);
+  background: linear-gradient(to right,#7cdced 0,#1a73cd 48%,#1a73cd);
+}
+

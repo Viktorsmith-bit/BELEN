@@ -1,13 +1,346 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*MOBIL*/
+.belenDental{
+  background-image: url('./components/assets/images/Inicio/Header/inicio.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: 50% 50%;
+}
+.round{
+  background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  0%);
+  opacity: 0.8;
+}
+.hidden{
+  display: none;
+}
+.hiddenButton{
+  display: initial;
+}
+.marginLeft{
+  margin-left: 0rem;
+}
+.marginRight{
+  margin-right: 0rem;
+}
+.height-top{
+  height: 3rem;
+}
+.width{
+  width: 100%;
+}
+.marginTop{
+  margin-top: 8.1rem;
+}
+.anchoCredito{
+  width: 100%;
+}
+.anchoBelen{
+  width: 100%;
+}
+.widthTra{
+  width: 22rem;
+}
+.icono{
+  height: 10rem;
+  width: 10rem;
+}
+.heightBelen{
+  height: 8rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/*SM*/
+@media (min-width: 576px) {
+  .round{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  0%);
+    opacity: 0.8;
+  }
+  /*NavBar */
+  .height-nav{
+    height: auto;
+  }
+  .height-top{
+    height: 3rem;
+  }
+  .height{
+    height:8rem;
+  }
+  
+  /*Header */
+  .anchoHeader{
+    width:17rem;
+  }
+  .hidden{
+    display: none;
+  }
+  .hiddenButton{
+    display: initial;
+  }
+  .marginLeft{
+    margin-left: 0rem;
+  }
+  .marginRight{
+    margin-right: 0rem;
+  }
+  .width{
+    width: 100%;
+  }
+  .marginTop{
+    margin-top: 8.1rem;
+  }
+  .anchoCredito{
+    width: 100%;
+  }
+  .anchoBelen{
+    width: 100%;
+  }
+  .widthTra{
+    width: 100%;
+  }
+  .icono{
+    height: 10rem;
+    width: 10rem;
+  }
+  .heightBelen{
+    height: 8rem;
+  }
+}
+
+
+
+/*TABLETA*/
+@media (min-width: 768px) { 
+  .round{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  0%);
+    opacity: 0.8;
+  }
+  /*NavBar */
+  .height-nav{
+    height: auto;
+  }
+  .height-top{
+    height: 3rem;
+  }
+  .height{
+    height:6rem;
+  }
+  .hiddenHorario{
+    visibility: visible;
+  }
+  /*Header */
+  .anchoHeader{
+    width:17rem;
+  }
+  .hidden{
+    display: none;
+  }
+  .hiddenButton{
+    display: initial;
+  }
+  .marginLeft{
+    margin-left: 0rem;
+  }
+  .marginRight{
+    margin-right: 0rem;
+  }
+  .marginTop{
+    margin-top: 2rem;
+  }
+  .width{
+    width: 100%;
+  }
+  .anchoCredito{
+    width: 22rem;
+  }
+  .anchoBelen{
+    width: 13rem;
+  }
+  .widthTra{
+    width: 22rem;
+  }
+  .icono{
+    height: 13rem;
+    width: 13rem;
+  }
+  .heightBelen{
+    height: 13rem;
+  }
+}
+
+
+
+/*LAPTOP 1024*/
+@media (min-width: 992px) {
+  .round{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  50%);
+    opacity: 0.8;
+  }
+  /*NavBar */
+  .height-nav{
+    height: 5rem;
+  }
+  .height-top{
+    height: 3rem;
+  }
+  .height{
+    height:8rem;
+  }
+  
+  /*Header */
+  .anchoHeader{
+    width:20rem;
+  }
+  .hidden{
+    display: initial;
+  }
+  .hiddenButton{
+    visibility: hidden;
+  }
+  .marginLeft{
+    margin-left: -4rem;
+  }
+  .marginRight{
+    margin-right: -4rem;
+  }
+  .marginTop{
+    margin-top: 0rem;
+  }
+  .width{
+    width: 75%;
+  }
+  .anchoCredito{
+    width: 24rem;
+  }
+  .anchoBelen{
+    width: 14rem;
+  }
+  .widthTra{
+    width: 18rem;
+  }
+  .icono{
+    height: 15rem;
+    width: 15rem;
+  }
+  .heightBelen{
+    height: 13rem;
+  }
+}
+
+
+
+/*LAPTOP 1144*/
+@media (min-width: 1200px) {
+  .round{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  50%);
+    opacity: 0.8;
+  }
+  /*NavBar */
+  .height-nav{
+    height: 5rem;
+  }
+  .height-top{
+    height: 3rem;
+  }
+  .height{
+    height:8rem;
+  }
+  
+  /*Header */
+  .anchoHeader{
+    width:20rem;
+  }
+  .hidden{
+    display: initial;
+  }
+  .hiddenButton{
+    visibility: hidden;
+  }
+  .marginLeft{
+    margin-left: -4rem;
+  }
+  .marginRight{
+    margin-right: -4rem;
+  }
+  .width{
+    width: 75%;
+  }
+  .marginTop{
+    margin-top: 0rem;
+  }
+  .anchoCredito{
+    width: 24rem;
+  }
+  .anchoBelen{
+    width: 15rem;
+  }
+  .widthTra{
+    width: 18rem;
+  }
+  .icono{
+    height: 15rem;
+    width: 15rem;
+  }
+  .heightBelen{
+    height: 13rem;
+  }
+}
+
+
+
+/*COMPUTADOR DE ESCRITORIO*/
+@media (min-width: 1400px) {
+  .round{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  50%);
+    opacity: 0.8;
+  }
+  /*NavBar */
+  .height-nav{
+    height: 5rem;
+  }
+  .height-top{
+    height: 3rem;
+  }
+  .height{
+    height:8rem;
+  }
+
+  /*Header */
+  .anchoHeader{
+    width:20rem;
+  }
+  .hidden{
+    display: initial;
+  }
+  .hiddenButton{
+    visibility: hidden;
+  }
+  .marginLeft{
+    margin-left: -4rem;
+  }
+  .marginRight{
+    margin-right: -4rem;
+  }
+  .marginTop{
+    margin-top: 0rem;
+  }
+  .width{
+    width: 75%;
+  }
+  .anchoCredito{
+    width: 24rem;
+  }
+  .anchoBelen{
+    width: 15rem;
+  }
+  .widthTra{
+    width: 18rem;
+  }
+  .icono{
+    height: 15rem;
+    width: 15rem;
+  }
+  .heightBelen{
+    height: 13rem;
+  }
 }
