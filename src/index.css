@@ -6,6 +6,41 @@
   background-origin: content-box;
   background-position: 50% 50%;
 }
+.implantes{
+  background-image: url('./components/assets/images/Inicio/Header/implantes.jpg');
+  background-position: 100% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.endodoncia{
+  background-image: url('./components/assets/images/Inicio/Header/endodoncia.jpg');
+  background-position: 85% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.esteticaDental{
+  background-image: url('./components/assets/images/Inicio/Header/esteticaDental.jpg');
+  background-position: 85% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.odontopediatria{
+  background-image: url('./components/assets/images/Inicio/Header/odontopediatria.jpg');
+  background-position: 85% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+.ortodoncia{
+  background-image: url('./components/assets/images/Inicio/Header/ortodoncia.jpg');
+  background-position: 85% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
 .round{
   background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  0%);
   opacity: 0.8;
@@ -47,11 +82,54 @@
 .heightBelen{
   height: 8rem;
 }
-
-
+.heightImage{
+  height: 15rem;
+}
 
 /*SM*/
 @media (min-width: 576px) {
+  .belenDental{
+    background-image: url('./components/assets/images/Inicio/Header/inicio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 50% 50%;
+  }
+  .implantes{
+    background-image: url('./components/assets/images/Inicio/Header/implantes.jpg');
+    background-position: 85% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .endodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/endodoncia.jpg');
+    background-position: 85% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .esteticaDental{
+    background-image: url('./components/assets/images/Inicio/Header/esteticaDental.jpg');
+    background-position: 85% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .odontopediatria{
+    background-image: url('./components/assets/images/Inicio/Header/odontopediatria.jpg');
+    background-position: 85% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .ortodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/ortodoncia.jpg');
+    background-position: 85% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
   .round{
     background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  0%);
     opacity: 0.8;
@@ -105,12 +183,57 @@
   .heightBelen{
     height: 8rem;
   }
+  .heightImage{
+    height: 15rem;
+  }
 }
 
 
 
 /*TABLETA*/
 @media (min-width: 768px) { 
+  .belenDental{
+    background-image: url('./components/assets/images/Inicio/Header/inicio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 50% 50%;
+  }
+  .implantes{
+    background-image: url('./components/assets/images/Inicio/Header/implantes.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .endodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/endodoncia.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .esteticaDental{
+    background-image: url('./components/assets/images/Inicio/Header/esteticaDental.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .odontopediatria{
+    background-image: url('./components/assets/images/Inicio/Header/odontopediatria.jpg');
+    background-position: 75% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .ortodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/ortodoncia.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
   .round{
     background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  0%);
     opacity: 0.8;
@@ -166,12 +289,57 @@
   .heightBelen{
     height: 13rem;
   }
+  .heightImage{
+    height:auto
+  }
 }
 
 
 
 /*LAPTOP 1024*/
 @media (min-width: 992px) {
+  .belenDental{
+    background-image: url('./components/assets/images/Inicio/Header/inicio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 50% 50%;
+  }
+  .implantes{
+    background-image: url('./components/assets/images/Inicio/Header/implantes.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .endodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/endodoncia.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .esteticaDental{
+    background-image: url('./components/assets/images/Inicio/Header/esteticaDental.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .odontopediatria{
+    background-image: url('./components/assets/images/Inicio/Header/odontopediatria.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .ortodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/ortodoncia.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
   .round{
     background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  50%);
     opacity: 0.8;
@@ -225,12 +393,57 @@
   .heightBelen{
     height: 13rem;
   }
+  .heightImage{
+    height:auto
+  }
 }
 
 
 
 /*LAPTOP 1144*/
 @media (min-width: 1200px) {
+  .belenDental{
+    background-image: url('./components/assets/images/Inicio/Header/inicio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 50% 50%;
+  }
+  .implantes{
+    background-image: url('./components/assets/images/Inicio/Header/implantes.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .endodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/endodoncia.jpg');
+    background-position: 40% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .esteticaDental{
+    background-image: url('./components/assets/images/Inicio/Header/esteticaDental.jpg');
+    background-position: 40% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .odontopediatria{
+    background-image: url('./components/assets/images/Inicio/Header/odontopediatria.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .ortodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/ortodoncia.jpg');
+    background-position: 35% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
   .round{
     background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  50%);
     opacity: 0.8;
@@ -284,12 +497,57 @@
   .heightBelen{
     height: 13rem;
   }
+  .heightImage{
+    height:auto
+  }
 }
 
 
 
 /*COMPUTADOR DE ESCRITORIO*/
 @media (min-width: 1400px) {
+  .belenDental{
+    background-image: url('./components/assets/images/Inicio/Header/inicio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: 50% 50%;
+  }
+  .implantes{
+    background-image: url('./components/assets/images/Inicio/Header/implantes.jpg');
+    background-position: 30% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .endodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/endodoncia.jpg');
+    background-position: 40% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .esteticaDental{
+    background-image: url('./components/assets/images/Inicio/Header/esteticaDental.jpg');
+    background-position: 40% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .odontopediatria{
+    background-image: url('./components/assets/images/Inicio/Header/odontopediatria.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
+  .ortodoncia{
+    background-image: url('./components/assets/images/Inicio/Header/ortodoncia.jpg');
+    background-position: 35% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  }
   .round{
     background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(255,0,0,0), #03436d  50%);
     opacity: 0.8;
@@ -342,5 +600,8 @@
   }
   .heightBelen{
     height: 13rem;
+  }
+  .heightImage{
+    height:auto
   }
 }

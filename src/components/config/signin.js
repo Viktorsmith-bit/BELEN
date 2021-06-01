@@ -20,7 +20,7 @@ export default class Sign extends Component {
     }
     hundleClick(e) {
         e.preventDefault();
-        if (this.state.email === 'dentalbelen@gmail.com' && this.state.password === 'dentalbelen2020') {
+        if (this.state.email === 'dentalbelen_clinica@gmail.com' && this.state.password === 'dentalbelen2021') {
             this.setState({
                 ruta: false
             })
@@ -31,42 +31,40 @@ export default class Sign extends Component {
     render() {
         let button;
         let renderizado;
-        if (this.state.ruta) {
-            button =
-                <div className='container-fluid' style={{ backgroundColor: '#F4F6F7 ' }}>
-                    <div className='row align-items-center justify-content-center' style={{ height: '100vh', width: '100%' }}>
-                        <div className='col-lg-9 col-sm-11'>
+        if (this.state.ruta) { 
+            button = <div className='container-fluid text-center' style={{ backgroundColor: '#F4F6F7 ' }}>
+                    <div className='row align-items-center justify-content-center px-4 px-md-0 px-lg-0' style={{ height: '100vh'}}>
+                        <div className='col-12 col-md-9 col-lg-9 col-sm-11'>
                             <div className='row justify-content-center' style={{marginBottom:'1rem'}}>
-                                <h1 className="display-4">Solo Personal Autorizado</h1>
+                                <h1 className="display-4 fw-bold">SOLO PERSONAL AUTORIZADO</h1>
                             </div>
                             <div className='row justify-content-center'>
                                 <div className='col-lg-5 col-sm-12'>
                                     <form className="form-signin" onSubmit={this.hundleClick} >
-                                        <label for="inputEmail" className="sr-only">Email address</label>
+                                        <label for="inputEmail" className="sr-only">Correo electrónico</label>
                                         <input
                                             onChange={this.hundleChange}
                                             type="email"
                                             name='email'
                                             id="inputEmail"
                                             className="form-control"
-                                            placeholder="Email address"
+                                            placeholder="Correo"
                                             required autofocus
                                             style={{ height: '3.5rem' }} />
-                                        <label for="inputPassword" className="sr-only">Password</label>
+                                        <label for="inputPassword" className="sr-only mt-4">Contraseña</label>
                                         <input
                                             onChange={this.hundleChange}
                                             type="password"
                                             name='password'
                                             id="inputPassword"
                                             className="form-control"
-                                            placeholder="Password"
+                                            placeholder="Contraseña"
                                             required
                                             style={{ height: '3.5rem', marginTop: '0.3rem' }} />
                                         <button
-                                            className="btn btn-lg btn-info btn-block"
+                                            className="btn btn-lg bk-color btn-block text-white"
                                             style={{ marginTop: '1.5rem' }}
                                             type="submit"
-
                                         >
                                             Iniciar sesión
                                         </button>
@@ -74,7 +72,7 @@ export default class Sign extends Component {
                                 </div>
                             </div>
                             <div className='row justify-content-center'>
-                                <p className="mt-5 mb-3 text-muted">&copy;Dental-Belén 2020</p>
+                                <p className="mt-5 mb-3 text-muted">&copy;Clínica-Belén 2021</p>
                             </div>
                         </div>
                     </div>
@@ -84,10 +82,9 @@ export default class Sign extends Component {
             renderizado = <Reservacion />
         }
         return (
-            <div>
+            <div className='LogIn'>
                 {button}
-                {renderizado}
-                               
+                {renderizado}                        
             </div>
         )
     }

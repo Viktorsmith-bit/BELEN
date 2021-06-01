@@ -23,7 +23,6 @@ export default function App() {
         const collection = await db.collection({
             name: 'belendb',
             schema: userSchemaDB(),
-            
             migrationStrategies: {
                 //migramos de la version schemna cero a la uno
                 1: function (oldDoc) {

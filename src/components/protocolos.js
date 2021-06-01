@@ -9,6 +9,9 @@ import Transito from './assets/images/Inicio/Protocolo//distanciamiento-social.s
 import Consultorio from './assets/images/Inicio/Protocolo/gel-de-manos.svg';
 
 class App extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+      }
     render() {
         const slogan = 'Tu seguridad nos importa';
         const imagen = 'bioseguridad';

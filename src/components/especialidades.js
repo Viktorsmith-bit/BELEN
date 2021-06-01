@@ -6,19 +6,24 @@ import Blog from './assets/images/Blog/dentista.svg'
 import Footer from './contents/footer';
 
 class App extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
-    const slogan = 'Reserve en línea. Es fácil, rápido y seguro';
+    const slogan = 'Sonríe, es la mejor opción.';
     const imagen = 'belen-dent';
+    const text = 'text-center';
+
     return (
-      <div className='bg-white'>
+      <div className='bg-white' id='inicio'>
         <Nav />
-        <Header title='NUESTRO BLOG' slogan={slogan} imagen={imagen} />
+        <Header title='NUESTRO BLOG' slogan={slogan} imagen={imagen} text={text} />
         <div className='container-xl'>
           <div className='row justify-content-center py-5 mt-lg-5'>
               <div className="col-xl-10 d-flex flex-column align-items-center">
                   <img src={Blog} className='icono' />
                   <h1 className="display-5 fw-bold color text-center mt-5">Mantente Informado</h1>
-                  <h5 className='lead text-center'>Encuentre los mejores consejos en nuestro blog</h5>    
+                  <h5 className='lead text-center'>Encuentre los mejores consejos</h5>    
               </div>
           </div>
         </div>

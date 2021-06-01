@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './contents/nav';
 import Header from './contents/header';
-import Database from './database/database';
+import DatabaseBelen from './database/db/database.belen';
 import BelenCard from './assets/images/Belen-card/medicine.svg';
 import Footer from '../components/contents/footer';
 
@@ -28,7 +28,8 @@ hundleChange(e) {
 }
 
 async componentDidMount() {
-    const dbcard = await Database();
+    window.scrollTo(0, 0);
+    const dbcard = await DatabaseBelen();
     const rx = dbcard.find().exec().then((item) => { return this.setState({ id: item.length }) });
 }
 
@@ -36,28 +37,17 @@ async componentDidMount() {
 async hundleClick(e) {
     e.preventDefault();
     //Creamos una instancia con la colección
-    const rxdb = await Database();
+    const rxdb = await DatabaseBelen();
 
     //Insertamos los datos a la colección de la base de datos
     rxdb.insert({
         id: `${this.state.id + 1}`,
-        name: '*******',
-        correo: '*******',
-        especialidad: '*******',
-        telefono: '*******',
-        turno: '*******',
-        fecha: '*******',
-        hora: '*******',
         nombre: this.state.name,
         email: this.state.correo,
         opcion: this.state.especialidad,
         celular: this.state.telefono,
         fechacard: `${new Date().toDateString()}`,
         horacard: `${new Date().getHours()}:${new Date().getMinutes()}`,
-        lastname: '*******',
-        phone: '*******',
-        fechahelp: '*******',
-        horahelp: '*******',
     })
 
     this.setState({ modal: true })
@@ -65,10 +55,15 @@ async hundleClick(e) {
   render() {
     const slogan = 'La tarjeta que te cuida.';
     const imagen = 'belen-card';
+    const text = 'text-end';
+    const textColor = 'text-white';
+    const bgColor = 'bg-warning';
+    const textDark = 'text-dark';
+
     return (
       <div className='bg-white'>
           <Nav />
-          <Header title='BELÉN CARD' slogan={slogan} imagen={imagen} />
+          <Header title='BELEN CARD' slogan={slogan} imagen={imagen} text={text} textColor={textColor} bgColor={bgColor} textDark={textDark} />
           <div className='container-xl'>
               <div className='row justify-content-center mt-5 py-lg-5'>
                   <div className="col-md-8 col-lg-7 col-xl-8 d-flex flex-column align-items-center">
@@ -145,10 +140,10 @@ async hundleClick(e) {
               </div>        
           </div>         
           <iframe className='w-100 border mt-5' style={{ height: '30rem', zIndex:'10'}} src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d983.6874310176231!2d-77.5256609219123!3d-9.530460008635108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scl%C3%ADnica%20dental%20Belen%2C%20Huaraz!5e0!3m2!1ses-419!2spe!4v1604766633434!5m2!1ses-419!2spe" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
-                            {!this.state.modal ? <div class="d-flex px-4 pt-3">
+                            {!this.state.modal ? <div className="d-flex px-4 pt-3">
                                 <p className="modal-title my-auto" id="exampleModalLabel">Llene correctamente sus datos.</p>
                                 <button className='btn bk-color text-white px-3 py-2 ms-auto' data-bs-dismiss="modal" aria-label="Close"><code className='text-white'>X</code></button>
                             </div> : ''}

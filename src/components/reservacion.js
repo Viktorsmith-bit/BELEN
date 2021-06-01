@@ -1,23 +1,41 @@
 import React, { Component } from 'react';
 import Nav from './contents/nav';
 import Form from './sample/form';
-import Header from './contents/header';
 import Footer from './contents/footer';
 import Reservacion from './assets/images/Reservacion/braces.svg';
 class App extends Component {
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  
   render() {
-    const slogan = 'Reserve una cita, es fácil y seguro.';
-    const imagen = 'belen-dent';
     return (
       <div className='bg-white'>
         <Nav />
-        <Header title='RESERVE EN LÍNEA' slogan={slogan} imagen={imagen} />  
+        <div className='reserva marginTop heightImage'>
+            <div className='container-fluid'>
+                <div className="container-xxl py-5 py-md-5 py-lg-4" >
+                    <div className='row py-3 py-md-5 py-lg-5'>
+                        <div className='col-lg-12 p-3 p-lg-5 text-end d-none d-md-block d-lg-block'>
+                          <h1 className='display-1 fw-bold text-wrap color d-none d-lg-block'>RESERVE EN LÍNEA</h1>
+                            <h1 className='display-1 fw-bold text-wrap color d-none d-md-block d-lg-none'>RESERVACIÓN</h1>
+                            <p className='lead'>Reserva una cita, es fácil y seguro.</p>
+                            <a className='btn px-5 py-3 bk-color fw-bold text-white' href='#reservaOnline'>Reservar cita</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className='col-lg-12 p-3 p-lg-5 text-center d-md-none d-lg-none'>
+            <h1 className='display-1 fw-bold text-wrap color'>RESERVE EN LÍNEA</h1>
+            <p className='lead'>Reserva una cita, es fácil y seguro.</p>
+            <a className='btn px-5 py-3 bk-color fw-bold text-white' href='#reservaOnline'>Reservar cita</a>
+        </div>
         <div className='container-xl mt-md-5 mt-lg-5'>
           <div className='row justify-content-center'>
             <div className="col-xl-10 d-flex flex-column align-items-center">
                 <img src={Reservacion} className='icono' />
-                <h1 className="display-5 fw-bold color text-center">Reserve sin complicaciones</h1>
+                <h1 className="display-5 fw-bold color text-center" id='reservaOnline'>Reserve sin complicaciones</h1>
                 <h5 className='lead text-center'>Atendemos cualquier tipo de emergencia</h5>    
             </div>
           </div>

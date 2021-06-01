@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import DataDB from '../../../database/database';
+import React, { useEffect } from 'react';
+import DatabaseCall from '../../../database/db/database.call';
 
 export default function Hook() {
-    const [state, setState] = useState('Odontopediatria');
-
 
     useEffect(() => {
         async function rxDB() {
             //creamos una instancia con la base de datos
-            const rxdb = await DataDB();
+            const rxdb = await DatabaseCall();
 
             //seleccionamos el ID donde insertaremos las consultas realizadas
             const id = document.getElementById('id');
@@ -16,7 +14,6 @@ export default function Hook() {
             const phone = document.getElementById('phone');
             const fecha = document.getElementById('fecha');
             const hora = document.getElementById('hora');
-
 
             //realizamos las consultas a la base de datos
             const rx = rxdb.find().$
@@ -27,7 +24,6 @@ export default function Hook() {
                     fecha.innerHTML = items.map((item) => { return '<p>' + item.fechahelp + '</p>' }).join('')
                     hora.innerHTML = items.map((item) => { return '<p>' + item.horahelp + '</p>' }).join('')
                 });
-
         }
         rxDB();
     })

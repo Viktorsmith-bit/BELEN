@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Database from '../database/database';
+import DatabaseCall from '../database/db/database.call';
 class App extends Component {
     constructor(props){
         super(props);
@@ -25,7 +25,7 @@ class App extends Component {
         this.setState({modal:true})
     }
     async componentDidMount() {
-        const dbcard = await Database();
+        const dbcard = await DatabaseCall();
         const rx = dbcard.find().exec().then((item) => { return this.setState({ id: item.length }) });
     }
 
@@ -33,24 +33,11 @@ class App extends Component {
     async hundleClick(e) {
         e.preventDefault();
         //Creamos una instancia con la colección
-        const rxdb = await Database();
+        const rxdb = await DatabaseCall();
 
         //Insertamos los datos a la colección de la base de datos
         rxdb.insert({
             id: `${this.state.id + 1}`,
-            name: '*******',
-            correo: '*******',
-            especialidad: '*******',
-            telefono: '*******',
-            turno: '*******',
-            fecha: '*******',
-            hora: '*******',
-            nombre: '*******',
-            email: '*******',
-            opcion: '*******',
-            celular: '*******',
-            fechacard: '*******',
-            horacard: '*******',
             lastname: this.state.lastname,
             phone: this.state.phone,
             fechahelp: `${new Date().toDateString()}`,
@@ -75,20 +62,19 @@ class App extends Component {
                         </div>
                     </div>
                 </div>            
-                <div className='container-xxl'>               
+                <div className='container-xxl py-3'>               
                       <div className='row justify-content-center py-xl-5 py-xxl-5 px-md-5 px-lg-4 px-xl-0 py-5 py-md-2 py-lg-4 py-xl-0 py-xxl-3'>                              
-                          <div className='col-12 col-md-12 col-lg-7 col-xl-6 py-5' >
-                              <h1 className='display-3 fw-bolder color text-center text-lg-start color' >BIENVENIDO A NUESTRA CLÍNICA</h1>
-                              <h1 className='text-center lead d-md-none d-lg-none'>Disfrute de nuestra atención</h1>
-                              <p className='color lead text-md-center text-lg-start mt-md-3 mt-lg-0 color d-none d-md-block'>Obtenga su tarjeta Belen Card y con ello descuentos especiales y acceso a crédito directo, y pague todos sus tratamientos dentales hasta en 12 meses sin intereses.</p>
+                          <div className='col-12 col-md-12 col-lg-7 col-xl-7 py-5' >
+                              <h1 className='display-2 fw-bolder color text-center text-lg-start color' >BIENVENIDO A NUESTRA CLÍNICA</h1>
+                              <h1 className='text-center lead text-lg-start d-lg-none'>Disfrute de nuestra atención</h1> 
+                              <h1 className='text-start lead d-none d-lg-block mt-2 color'>Visítenos, no deje que su miedo a sufrir, sea más grande que sus ganas de sonreír.</h1>                          
                               <div className='d-flex justify-content-center justify-content-lg-start gap-3'>
-                                <Link to='/belenCard'><button className='btn text-dark yellow py-2 py-md-3 py-lg-3 px-3 mt-3 fw-bold' >Más infromación</button></Link>
                                 <div className='px-5 btn d-flex justify-content-center align-items-center yellow shadow-lg ml-auto py-2 mt-3 rounded hiddenButton' data-bs-toggle="modal" data-bs-target="#exampleModalTablet">
                                     <p className='my-auto text-decoration-none text-dark fw-bold'>Te llamamos</p>
                                 </div>
                               </div>
                           </div>                       
-                          <div className='col-12 col-md-10 col-lg-5 col-xl-5 align-self-center hidden'>
+                          <div className='col-12 col-md-10 col-lg-5 col-xl-4 align-self-center hidden'>
                               <div className='d-flex flex-column align-items-center align-items-lg-end gap-2 mt-3'>
                                   <form onSubmit={this.hundleClick} className='anchoHeader back-color p-3 rounded'>
                                       <label className='text-center fw-bold mx-auto text-white'>Te llamamos</label>

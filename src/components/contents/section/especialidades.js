@@ -15,7 +15,7 @@ export default class especialidades extends Component {
                                 <img src={Implante} style={{ height: '8rem', width: '8rem' }} />
                             </div>
                             <div className='p-2'><h4 className='fw-normal text-muted'>Implantes Dentales</h4> </div>
-                            <Link to='/precing'>
+                            <Link to='/implantes'>
                                 <button className='btn text-white p-2 w-50' style={{backgroundColor:'#233554' }}>Leer más</button>
                             </Link>
                         </div>
@@ -24,7 +24,7 @@ export default class especialidades extends Component {
                                 <img src={Endodoncia} style={{ height: '8rem', width: '8rem' }} />
                             </div>
                             <div className='p-2'><h4 className='fw-normal text-muted'>Endodoncia</h4> </div>
-                            <Link to='/precing'>
+                            <Link to='/endodoncia'>
                                 <button className='btn text-white p-2 w-50' style={{backgroundColor:'#233554' }}>Leer más</button>
                             </Link>
                         </div>
@@ -33,7 +33,7 @@ export default class especialidades extends Component {
                                 <img src={Estetica} style={{ height: '8rem', width: '8rem' }} />
                             </div>
                             <div className='p-2'><h4 className='fw-normal text-muted'>Estética dental</h4> </div>
-                            <Link to='/precing'>
+                            <Link to='/estetica/dental'>
                                 <button className='btn text-white p-2 w-50' style={{backgroundColor:'#233554' }}>Leer más</button>
                             </Link>
                         </div>
@@ -42,7 +42,7 @@ export default class especialidades extends Component {
                                 <img src={Ortodoncia} style={{ height: '8rem', width: '8rem' }} />
                             </div>
                             <div className='p-2'><h4 className='fw-normal text-muted'>Ortodoncia</h4> </div>
-                            <Link to='/precing'>
+                            <Link to='/ortodoncia'>
                                 <button className='btn text-white p-2 w-50' style={{backgroundColor:'#233554' }}>Leer más</button>
                             </Link>
                         </div>
@@ -51,7 +51,7 @@ export default class especialidades extends Component {
                                 <img src={Odontopediatria} style={{ height: '8rem', width: '8rem' }} />
                             </div>
                             <div className='p-2'><h4 className='fw-normal text-muted'>Odontopediatría</h4> </div>
-                            <Link to='/precing'>
+                            <Link to='/odontopediatria'>
                                 <button className='btn text-white p-2 w-50' style={{backgroundColor:'#233554' }}>Leer más</button>
                             </Link>
                         </div>

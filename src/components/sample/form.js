@@ -79,12 +79,11 @@ class App extends Component {
               </div>
             </div>
           </div>
-        </div>
-        
+        </div> 
         <div className='row justify-content-center'>
           <div className='col-lg-8 col-xl-8'>
             <p className='lead text-center fw-bold'>Reserva tu cita</p>
-            <form className='shadow-sm border bg-white rounded p-3 p-md-4 p-lg-4' onSubmit={this.hundleClick} >
+            <form className='shadow-sm border bg-white rounded p-3 p-md-4 p-lg-4' onSubmit={this.hundleClick}>
               <div className="form-row d-flex gap-2">
                 <div className="col-md-6 mb-3">
                   <label for="validationDefault01">Nombres</label>
@@ -177,12 +176,10 @@ class App extends Component {
               </div>
             </form>
           </div>
-
           <div className='col-lg-4 col-xl-4'>
             <Tarjeta />
           </div>
         </div>
-
       </div>
     );
   }

@@ -4,11 +4,14 @@ import Home from './home';
 import BelenCard from './belenCard';
 import Especialidades from  './especialidades';
 import Reservacion from './reservacion';
-import Precing from './sample/precing';
 import Protocolos from './protocolos';
 import Signin from './config/signin';
 import CreditoDirecto from './creditoDirecto';
-
+import Implantes from './especialidades/implantes';
+import Endodoncia from './especialidades/endodoncia';
+import EsteticaDental from './especialidades/estetica.dental';
+import Ortodoncia from './especialidades/ortodoncia';
+import Odontopediatria from './especialidades/odontopediatria';
 class App extends Component {
     render() {
         return (           
@@ -16,12 +19,16 @@ class App extends Component {
                 <Switch>
                     <Route path='/' exact component={Home} />
                     <Route path='/nosotros' component={Protocolos} />
-                    <Route path='/belenCard' component={BelenCard} />
-                    <Route path='/credito' component={CreditoDirecto} />
+                    <Route path='/belen/card' component={BelenCard} />
+                    <Route path='/credito/directo' component={CreditoDirecto} />
                     <Route path='/especialidades' component={Especialidades} />
                     <Route path='/Reservacion' component={Reservacion} />
-                    <Route path='/precing' component={Precing} />
-                    <Route path='/sesion/id' component={Signin} />
+                    <Route path='/implantes' component={Implantes} />
+                    <Route path='/endodoncia' component={Endodoncia} />
+                    <Route path='/estetica/dental' component={EsteticaDental} />
+                    <Route path='/ortodoncia' component={Ortodoncia} />
+                    <Route path='/odontopediatria' component={Odontopediatria} />
+                    <Route path='/sistema/dental' component={Signin} />
                 </Switch>
             </Router> 
         );

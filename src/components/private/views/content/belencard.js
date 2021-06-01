@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import DataDB from '../../../database/database';
+import databaseBelen from '../../../database/db/database.belen';
 
 export default function Hook() {
-    const [state, setState] = useState('Odontopediatria');
-
-
     useEffect(() => {
         async function rxDB() {
             //creamos una instancia con la base de datos
-            const rxdb = await DataDB();
+            const rxdb = await databaseBelen();
 
             //seleccionamos el ID donde insertaremos las consultas realizadas
             const id = document.getElementById('id');
@@ -31,11 +28,9 @@ export default function Hook() {
                     fecha.innerHTML = items.map((item) => { return '<p>' + item.fechacard + '</p>' }).join('')
                     hora.innerHTML = items.map((item) => { return '<p>' + item.horacard + '</p>' }).join('')
                 });
-
         }
         rxDB();
     })
-
 
     return (
         <div className="table-responsive">
@@ -45,7 +40,7 @@ export default function Hook() {
                         <th><h6>ID</h6></th>
                         <th><h6>Nombres</h6></th>
                         <th><h6>Correo</h6></th>
-                        <th><h6>Especialidad</h6></th>
+                        <th><h6>Opción</h6></th>
                         <th><h6>Teléfono</h6></th>
                         <th><h6>Fecha</h6></th>
                         <th><h6>Hora</h6></th>
@@ -66,3 +61,4 @@ export default function Hook() {
         </div>
     )
 }
+

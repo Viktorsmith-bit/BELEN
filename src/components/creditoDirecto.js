@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './contents/nav';
 import Header from './contents/header';
-import Database from './database/database';
+import DatabaseBelen from './database/db/database.belen';
 import Footer from '../components/contents/footer';
 import Credito from './assets/images/Credito-directo/checkup.svg';
 
@@ -28,7 +28,8 @@ hundleChange(e) {
 }
 
 async componentDidMount() {
-    const dbcard = await Database();
+    window.scrollTo(0, 0);
+    const dbcard = await DatabaseBelen();
     const rx = dbcard.find().exec().then((item) => { return this.setState({ id: item.length }) });
 }
 
@@ -36,39 +37,30 @@ async componentDidMount() {
 async hundleClick(e) {
     e.preventDefault();
     //Creamos una instancia con la colección
-    const rxdb = await Database();
+    const rxdb = await DatabaseBelen();
 
     //Insertamos los datos a la colección de la base de datos
     rxdb.insert({
         id: `${this.state.id + 1}`,
-        name: '*******',
-        correo: '*******',
-        especialidad: '*******',
-        telefono: '*******',
-        turno: '*******',
-        fecha: '*******',
-        hora: '*******',
         nombre: this.state.name,
         email: this.state.correo,
         opcion: this.state.especialidad,
         celular: this.state.telefono,
         fechacard: `${new Date().toDateString()}`,
         horacard: `${new Date().getHours()}:${new Date().getMinutes()}`,
-        lastname: '*******',
-        phone: '*******',
-        fechahelp: '*******',
-        horahelp: '*******',
     })
 
     this.setState({ modal: true })
 }
   render() {
     const slogan = 'Hasta en 12 meses.';
-    const imagen = 'belen-dent';
+    const imagen = 'credito';
+    const text = 'text-start';
+
     return (
       <div className='bg-white'>
             <Nav />
-            <Header title='CRÉDITO DIRECTO' slogan={slogan} imagen={imagen} />
+            <Header title='CRÉDITO DIRECTO' slogan={slogan} imagen={imagen} text={text} />
             <div className='container-xl'>
                 <div className='row justify-content-center mt-5 py-lg-5'>
                 <div className="col-md-8 col-lg-7 col-xl-8 d-flex flex-column align-items-center">
