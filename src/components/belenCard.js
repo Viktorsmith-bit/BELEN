@@ -135,7 +135,7 @@ async hundleClick(e) {
                     <p className='text-white-50 mt-3'>Si bien hemos hablado sobre que es realmente nuestra tarjeta y sus beneficios, envíenos una solicitud y nuestro equipo le enviará un correo electrónico detallando una proforma, entre otras cosas.</p>
                   </div>
                   <div className='col-xl-5 d-flex justify-content-center align-items-center mt-4 mt-lg-0'>
-                    <button className='btn shadow-sm rounded-pill text-dark px-5 py-3' data-bs-toggle="modal" data-bs-target="#exampleModal" style={{backgroundColor:'#82E0AA'}} >Enviar solictud</button>
+                    <button className='btn shadow-sm rounded-pill text-dark px-5 py-3 fw-bold' data-bs-toggle="modal" data-bs-target="#exampleModal" style={{backgroundColor:'#82E0AA'}} >Enviar solictud</button>
                   </div>
               </div>        
           </div>         
@@ -184,7 +184,7 @@ async hundleClick(e) {
                                         <option>Quiero más información sobre Belen Card</option>
                                     </select>
                                     <button className='form-control mt-2 btn bk-color text-white py-3'>Enviar</button>
-                                </form> : <div className='text-center'><p>Sus datos se han enviado correctamente</p><button  className='btn bk-color text-white px-3 py-2' data-bs-dismiss="modal" aria-label="Close">Entendido</button></div>}
+                                </form> : <div className='text-center'><p>Sus datos se han enviado correctamente. En unos minutos nuestro equipo se pondrá en contacto con usted.</p><button  className='btn bk-color text-white px-3 py-2' data-bs-dismiss="modal" aria-label="Close">Entendido</button></div>}
                             </div>
                         </div>
                     </div>

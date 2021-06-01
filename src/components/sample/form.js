@@ -70,12 +70,12 @@ class App extends Component {
           tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" >
             <div className="modal-content">
-              <div className="px-5 py-3">
-                <h5 id="exampleModalLabel">Sus datos enviaron correctamente</h5>
-                <p>Le esperamos en la fecha indicada</p>
+              <div className="px-5 py-3 text-center">
+                <h6 className="fw-bold" id="exampleModalLabel">Sus datos enviaron correctamente. En unos minutos nuestro equipo se pondrá en contacto con usted.</h6>
+                <p>Le esperamos en la fecha indicada. Gracias por elegir Belén clínica Dental Especializada.</p>
               </div>
               <div className="modal-footer">
-                <button className='btn bk-color text-white px-3 py-2 ms-auto' data-bs-dismiss="modal" aria-label="Close">Entendido</button>
+                <button className='btn bk-color text-white px-3 py-2 mx-auto' data-bs-dismiss="modal" aria-label="Close">Entendido</button>
               </div>
             </div>
           </div>

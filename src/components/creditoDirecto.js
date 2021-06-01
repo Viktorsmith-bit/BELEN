@@ -97,7 +97,7 @@ async hundleClick(e) {
             </div>
             <h6 className='text-center mt-lg-4 lead'>Ponte en contacto con nosotros</h6>
             <div className='d-flex justify-content-center align-items-center mt-4 mb-5'>
-                <button className='btn shadow-sm rounded-pill text-dark px-5 py-3' data-bs-toggle="modal" data-bs-target="#exampleModal" style={{backgroundColor:'#82E0AA'}} >Solicitar crédito directo</button>
+                <button className='btn shadow-sm rounded-pill text-dark px-5 py-3 fw-bold' data-bs-toggle="modal" data-bs-target="#exampleModal" style={{backgroundColor:'#82E0AA'}} >Solicitar crédito directo</button>
             </div>        
             <iframe className='w-100 border mt-5' style={{ height: '30rem', zIndex:'10'}} src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d983.6874310176231!2d-77.5256609219123!3d-9.530460008635108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scl%C3%ADnica%20dental%20Belen%2C%20Huaraz!5e0!3m2!1ses-419!2spe!4v1604766633434!5m2!1ses-419!2spe" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -144,7 +144,7 @@ async hundleClick(e) {
                                             <option>Quiero más información sobre Crédito Directo</option>
                                         </select>
                                         <button className='form-control mt-2 btn bk-color text-white py-3'>Enviar</button>
-                                    </form> : <div className='text-center'><p>Sus datos se han enviado correctamente</p><button  className='btn bk-color text-white px-3 py-2' data-bs-dismiss="modal" aria-label="Close">Entendido</button></div>}
+                                    </form> : <div className='text-center'><p>Sus datos se han enviado correctamente. En unos minutos nuestro equipo se pondrá en contacto con usted.</p><button  className='btn bk-color text-white px-3 py-2' data-bs-dismiss="modal" aria-label="Close">Entendido</button></div>}
                                 </div>
                             </div>
                         </div>

@@ -50,14 +50,14 @@ class App extends Component {
             <div className='belenDental marginTop'>
                 <div className='modal fade' id={this.state.lastname !== '' && this.state.phone !== ''? 'exampleModal' : '' }
                     tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" >
+                    <div class="modal-dialog modal-dialog-centered text-center" >
                         <div className="modal-content">
                         <div className="px-5 py-3">
-                            <h5 id="exampleModalLabel">Nuestro equipo se comunicará con usted</h5>
+                            <h6 className='fw-bold' id="exampleModalLabel">Nuestro equipo se comunicará con usted</h6>
                             <p>Por favor estar atento a su celular</p>
                         </div>
                         <div className="modal-footer">
-                            <button className='btn bk-color text-white px-3 py-2 ms-auto' data-bs-dismiss="modal" aria-label="Close">Entendido</button>
+                            <button className='btn bk-color text-white px-3 py-2 mx-auto' data-bs-dismiss="modal" aria-label="Close">Entendido</button>
                         </div>
                         </div>
                     </div>
